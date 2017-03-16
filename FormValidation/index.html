@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>JS/Expert Example</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="http://www.jsexpert.net/">JS/Expert</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+
+				<ul class="nav navbar-nav hidden-sm hidden-md">
+					<li class="active"><a href="#">Задание к уроку №9</a></li>
+				</ul>
+
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="http://www.jsexpert.net/#head">Главная</a></li>
+					<li><a href="http://www.jsexpert.net/#basic">Как стать программистом</a></li>
+					<li><a href="http://www.jsexpert.net/#js">Понятный JS</a></li>
+					<li><a href="http://www.jsexpert.net/#angular">Продвинутый JS</a></li>
+					<li><a href="http://www.jsexpert.net/articles/">База знаний</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="site-wrapper">
+		
+		<div class="container"> 
+			<div class="row">
+				<div class=" col-sm-offset-1 col-sm-8">
+					<br>
+					<br>
+					
+					<div class="row">
+                        <p id="form-heading" class="lead">Заполните форму</p>
+                        <p id="success-message" class="bg-success validation-msg invisible">Форма заполнена правильно</p>
+                        <p id="error-message" class="bg-danger validation-msg invisible">Ошибка заполнения формы</p>
+                        <form id="form" class="form-horizontal">
+                            <div class="form-group">
+                                <label for="inputName" class="col-sm-2 control-label">Имя</label>
+                                <div class="col-sm-10">
+                                    <input title = "Буквы, цифры, от 3 до 16 символов" type="text" class="form-control" id="inputName" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input title = "Символы@Символы.Символы" type="text" class="form-control" id="inputEmail" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword" class="col-sm-2 control-label">Пароль</label>
+                                <div class="col-sm-10">
+                                    <input title = "Буквы, цифры, от 6 до 18 символов" type="password" class="form-control" id="inputPassword" placeholder="Password">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="button" id="submit" class="btn btn-default">Проверить</button>
+                                </div>
+                            </div>
+                        </form>
+
+						<br>
+						<br>
+						<p id="table-heading" class="lead invisible">Результаты заполнения формы</p>
+                        <table id="table" class="table table-bordered invisible">
+
+                            <thead>
+                                <tr>
+                                    <th class="col-sm-3">#</th>
+                                    <th class="col-sm-3">Имя</th>
+                                    <th class="col-sm-3">Email</th>
+                                    <th class="col-sm-3">Пароль</th>
+                                </tr>
+                            </thead>
+                            <tbody id="table-content">
+                            </tbody>
+                        </table>
+                        <button type="button" id="reset" class="btn btn-default invisible">Сбросить</button>	
+					</div>
+			
+					
+					
+            
+					
+				
+				</div>
+			</div>	
+			<br>
+			<br>
+			<br>
+
+		</div>
+			
+	</div>
+	
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
